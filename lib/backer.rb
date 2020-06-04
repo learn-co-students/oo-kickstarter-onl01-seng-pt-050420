@@ -8,6 +8,6 @@ class Backer
 
     def back_project(project)
         @backed_projects << project 
-        Project.backers << self         #why the lowercase project works here but not uppercase Project?
+        project.backers << self         #why the lowercase project works here but not uppercase Project?
     end 
 end 
